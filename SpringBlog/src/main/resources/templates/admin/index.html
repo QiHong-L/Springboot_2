@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/_fragments :: head(~{::title})">
+	<meta charset="UTF-8">
+	<title>登录首页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/my.css">
+</head>
+<body>
+	<!-- 导航 -->
+<nav class="ui inverted attached segment my-padded-tb-mini my-shadow-small" th:replace="admin/_fragments::menu(1)">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu ">
+        	<h2 class="ui teal header item">管理后台</h2>
+
+        	<a href="#"  class=" my-margin-top-small myhide item my-mobile-hide"><i class="mini home icon"></i>博客管理</a>
+        	<a href="#"  class="my-margin-top-small myhide item my-mobile-hide"><i class="mini idea icon"></i>分类管理</a>
+        	<a href="#" class="my-margin-top-small myhide item my-mobile-hide"><i class="mini tags icon"></i>标签管理</a>
+        	<div class="right myhide menu my-mobile-hide my-margin-top-small">
+        		<div class="ui dropdown item ">
+        			<div class="text">
+        				<img src="../static/images/person.jpg" class="ui avatar image"style="width: 2em;" >
+        				Json
+        			</div>
+        			<i class="dropdown icon"></i>
+        			<div class="menu">
+        				<a href="#" class="item">注销</a>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+    </div>
+   	<div class="ui button icon black my-mobile-show ">
+    	<i class="sidebar icon my-right-top showbtn"></i>
+    </div>
+</nav>
+
+<div class="ui attached pointing menu">
+	
+    <div class="ui container">
+        <div class="right menu">
+            <a href="#" class="item">发布</a>
+            <a href="#" class="active teal item">列表</a>
+        </div>
+    </div>
+</div>
+</div>
+<br>
+<br>
+<br>
+
+	<!-- 中间内容 -->
+	<div class="my-padded-tb-large my-container">
+		<div class="ui container">
+			<div class="ui success message large">
+				<h2>Hi,</h2>
+				<p>Json,欢迎登录</p>
+			</div>
+			<img src="../../static/images/person.jpg" th:src="@{/images/person.jpg}" style="width: 800px;height:400px;margin: auto" class="ui rounded bordered  image">
+		</div>
+	</div>
+
+    <!--底部footer-->
+<footer th:replace="admin/_fragments::foot" class="ui inverted vertical segment my-padded-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../../static/images/WeChat.jpg" th:src="@{/images/WeChat.jpg}" class="ui rounded image" alt="" style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header my-text-spaced my-text-lined my-opacity-mini">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">用户故事(User Story)</a>
+                    <a href="#" class="item">用户故事(User Story)</a>
+                    <a href="#" class="item">用户故事(User Story)</a>
+                </div>
+            </div>
+            <div class="four wide column">
+                <h4 class="ui inverted header my-text-spaced my-text-lined my-opacity-mini">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Email：2510343480@qq.com</a>
+                    <a href="#" class="item">QQ：2510343480</a>
+                    <a href="#" class="item">微博：老母亲的微笑</a>
+                </div>
+            </div>
+            <div class="six wide column">
+                <h4 class="ui inverted header my-text-spaced my-text-lined my-opacity-mini">My Blog</h4>
+                <p class="my-opacity-mini my-text-lined">这里是我的个人博客、会分享我学习编程过程中的经理和心得，希望可以给来到这里的人带来帮助...</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider "></div>
+        <p class="my-text-thin my-text-spaced my-text-lined my-opacity-mini">Copyright &copy; 2020 skg-xsn Designed by skg-xsn</p>
+    </div>
+</footer>
+
+
+    <!--/*/<th:block th:replace="admin/_fragments::script">/*/-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <!--/*/</th:block>/*/-->
+    <script type="text/javascript">
+        $('.showbtn').click(function(event) {
+            $('.myhide').toggleClass('my-mobile-hide');
+        });
+        $('.ui.dropdown').dropdown({
+            on:"hover"
+        });
+    </script>
+</body>
+</html>

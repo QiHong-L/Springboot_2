@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_fragments :: head(~{::title})">
+	<meta charset="UTF-8">
+	<title>详情</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+	<link rel="stylesheet" href="../static/css/typo.css">
+	<link rel="stylesheet" href="../static/css/agate.css">
+	<link rel="stylesheet" href="../static/css/my.css">
+</head>
+<body>
+	<!-- 导航 -->
+<nav class="ui inverted attached segment my-padded-tb-mini my-shadow-small"  th:replace="_fragments::menu(1)">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu ">
+	            <h2 class="ui teal header item">Blog</h2>
+	            <a href="index.html" class="item my-mobile-hide myhide"><i class="mini home icon"></i>首页</a>
+	            <a href="type.html" class="item my-mobile-hide myhide"><i class="mini idea icon"></i>分类</a>
+	            <a href="#" class="item my-mobile-hide myhide"><i class="mini tags icon"></i>标签</a>
+	            <a href="archives.html" class="item my-mobile-hide myhide"><i class="mini clone icon"></i>归档</a>
+	            <a href="aboutmy.html" class="item my-mobile-hide myhide"><i class="mini info icon"></i>关于我</a>
+            <div class="right myhide item my-mobile-hide">
+                <div class="ui icon inverted transparent input ">
+                    <input type="text" placeholder="Search...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui button icon black my-mobile-show ">
+    	<i class="sidebar icon my-right-top showbtn"></i>
+    </div>
+</nav>
+
+	<!-- 中间内容 -->
+<div class="my-container-samll my-padded-tb-big">
+		<div class="ui container ">
+			<div class="ui top attached segment">
+				<div class="ui link list horizontal">
+					<div class="item">
+						<img src="../static/images/beach.jpg" alt="" class="ui avatar image">
+						<div class="content"><a href="#" class="header">Json</a></div>
+					</div>
+					<div class="item">
+						<i class="calendar icon"></i>2020-03-08
+					</div>
+					<div class="item">
+						<i class="eye icon"></i> 5214
+					</div>
+				</div>
+			</div>
+			<div class="ui attached segment">
+				<!-- 图片 -->
+				<img src="../static/images/beach.jpg" alt="" th:src="@{images/beach.jpg}" class="ui rounded fluid image" style="height: 350px">
+			</div>
+			
+
+				<!-- 内容 -->
+			<div class="ui attached padded segment">
+				<!-- 内容 -->
+				<div class="ui right aligned basic segment ">
+					<div class="ui orange basic label">
+						转载
+					</div>
+				</div>
+				<!-- <pre><code class="css">p{color:red}</code></pre> -->
+				<h2 class="ui center aligned header">
+					做一个努力的人
+				</h2>
+				<div id="container" class="typo typo-selection my-padded-lr-response my-padded-tb-large ">
+					<p>　有一次，在我参加的一个晚会上，主持人问一个小男孩：你长大以后要做什么样的人？孩子看看我们这些企业家，然后说：做企业家。在场的人忽地笑着鼓起了掌。我也拍了拍手，但听着并不舒服。我想，这孩子对于企业究竟知道多少呢？他是不是因为当着我们的面才说要当企业家的呢？他是不是受了大人的影响，以为企业家风光，都是有钱的人，才要当企业家的呢？
+					</p>
+					<h2>1</h2>
+					<p>这一切当然都是一个谜。但不管怎样，作为一个人的人生志向，我以为当什么并不重要；不管是谁，最重要的是从小要立志做一个努力的人。
+					</p>
+					<h2>2</h2>
+					<p>有人说，“努力”与“拥有”是人生一左一右的两道风景。但我以为，人生最美最不能逊色的风景应该是努力。努力是人生的一种精神状态，是对生命的一种赤子之情。努力是拥有之母，拥有是努力之子。一心努力可谓条条大路通罗马，只想获取可谓道路逼仄，天地窄小。所以，与其规定自己一定要成为一个什么样的人物，获得什么东西，不如磨练自己做一个努力的人。志向再高，没有努力，志向终难坚守；没有远大目标，因为努力，终会找到奋斗的方向。做一个努力的人，可以说是人生最切实际的目标，是人生最大的境界。
+					</p>
+					<h2>3</h2>
+					<p>许多人因为给自己定的目标太高太功利，因为难以成功而变得灰头土脸，最终灰心失望。究其原因，往往就是因为太关注拥有，而忽略做一个努力的人。对于今天的孩子们，如果只关注他们将来该做个什么样的人物，不把意志品质作为一个做人的目标提出来，最终我们只能培养出狭隘、自私、脆弱和境界不高的人。遗憾的是，我们在这方面做得并不尽如人意。
+					</p>
+					<h2>4</h2>
+					<p>当许多人以为我已不行、该不行了的时候，我仍做着从地上爬起来的努力，我坚信人生就像马拉多纳踢球，往往是在快要倒下去的时候“进球”获得生机的。事实也正是如此，就在“山重水复疑无路”的时候
+					</p>
+					<h2>5</h2>
+					<p>世间许多平凡之辈，都要一些小优点，但由于自卑常被忽略了。其实，每个平淡的生命中，都蕴涵着一座丰富金矿，只要肯挖掘，就会挖出令自己都惊讶不已的宝藏
+					</p>
+				</div>
+				<!-- 标签 -->
+				<div class="my-padded-lr-response">
+					<div class="ui basic teal left pointing label">
+						方法论
+					</div>
+				</div>
+				<!-- 赞赏 -->
+				<div class=" ui segment center aligned basic">
+					<button id="paybtn" class="ui orange basic button circular">赞赏</button>
+				</div>
+				<div class="ui paymoney flowing popup transition hidden">
+					<div class="ui orange basic label">
+						<div class="ui images"  style="font-size: inherit !important">
+							<div class="image">
+								<img src="../static/images/WeChat.jpg"   class="ui rounded bordered image " style="width: 120px">
+								<div>支付宝</div>
+							</div>
+							<div class="image">
+								<img src="../static/images/WeChat.jpg"  class="ui rounded bordered image" style="width: 120px">
+								<div>微信</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+				<!-- 博客信息 -->
+			<div class="ui attached message positive ">
+				<!-- 博客信息 -->
+				<div class="ui middle aligned grid">
+					<div class="eleven wide column">
+						<ul class="list">
+							<li style="color: dodgerblue">作者：XXX（联系作者）</li>
+							<li style="color: dodgerblue">发表时间：xxxx-xx-xx</li>
+							<li style="color: dodgerblue">版权声明：自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）</li>
+							<li style="color: dodgerblue">转载：请在文末添加作者微信二维码</li>
+						</ul>
+					</div>
+					<div class="five wide column">
+						<img src="../static/images/WeChat.jpg"  class="ui right floated rounded bordered image" style="width: 120px">
+					</div>
+				</div>
+			</div>
+
+
+			<div class="ui bottom attached segment ">
+				<!-- 留言区域列表 -->
+				<div class="ui teal segment">
+					<div class="ui comments">
+						<h3 class="ui dividing header">Comments</h3>
+						<div class="comment">
+							<a class="avatar">
+								<img src="../static/images/beach.jpg" th:src="@{images/beach.jpg}">
+							</a>
+							<div class="content">
+								<a class="author">九霄</a>
+								<div class="metadata">
+									<span class="date">今天 at 5:42PM</span>
+								</div>
+								<div class="text">
+									多漂亮！
+								</div>
+								<div class="actions">
+									<a class="reply">回复</a>
+								</div>
+							</div>
+						</div>
+						<div class="comment">
+							<a class="avatar">
+								<img src="../static/images/beach.jpg" th:src="@{images/beach.jpg}">
+							</a>
+							<div class="content">
+								<a class="author">云外</a>
+								<div class="metadata">
+									<span class="date">昨天 at 12:30AM</span>
+								</div>
+								<div class="text">
+									<p>谢谢啦！</p>
+								</div>
+								<div class="actions">
+									<a class="reply">回复</a>
+								</div>
+							</div>
+							<div class="comments">
+								<div class="comment">
+									<a class="avatar">
+										<img src="../static/images/beach.jpg" th:src="@{images/beach.jpg}">
+									</a>
+									<div class="content">
+										<a class="author">天草</a>
+										<div class="metadata">
+											<span class="date">今天 15:34PM</span>
+										</div>
+										<div class="text">
+											你是对的！
+										</div>
+										<div class="actions">
+											<a class="reply">回复</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="comment">
+							<a class="avatar">
+								<img src="../static/images/beach.jpg" th:src="@{images/beach.jpg}">
+							</a>
+							<div class="content">
+								<a class="author">大爷</a>
+								<div class="metadata">
+									<span class="date">5 天前</span>
+								</div>
+								<div class="text">
+									哈哈哈哈哈
+								</div>
+								<div class="actions">
+									<a class="reply">回复</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 留言提交 -->
+				<div class="form ui">
+					<div class="field">
+						<textarea name="content" placeholder="请输入评论内容..."></textarea>
+					</div>
+					<div class="fields">
+						<div class="field my-mobile-wide my-margin-bottom-small">
+							<div class="ui left icon input">
+								<i class="user icon"></i>
+								<input type="text" name="nickname" placeholder="姓名">
+							</div>
+						</div>
+						<div class="field my-mobile-wide my-margin-bottom-small">
+							<div class="ui left icon input">
+								<i class="mail icon"></i>
+								<input type="text" name="email" placeholder="邮箱">
+							</div>
+						</div>
+						<div class="field my-mobile-wide my-margin-bottom-small">
+							<button class="ui teal button my-mobile-wide"><i class="edit icon"></i>发布</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+</div>
+
+	
+	<!--底部footer-->
+<footer  th:replace="_fragments::foot" class="ui inverted vertical segment my-padded-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../static/images/WeChat.jpg" class="ui rounded image" alt="" style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header my-text-spaced my-text-lined my-opacity-mini">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">用户故事(User Story)</a>
+                    <a href="#" class="item">用户故事(User Story)</a>
+                    <a href="#" class="item">用户故事(User Story)</a>
+                </div>
+            </div>
+            <div class="four wide column">
+                <h4 class="ui inverted header my-text-spaced my-text-lined my-opacity-mini">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Email：2510343480@qq.com</a>
+                    <a href="#" class="item">QQ：2510343480</a>
+                    <a href="#" class="item">微博：老母亲的微笑</a>
+                </div>
+            </div>
+            <div class="six wide column">
+                <h4 class="ui inverted header my-text-spaced my-text-lined my-opacity-mini">My Blog</h4>
+                <p class="my-opacity-mini my-text-lined">这里是我的个人博客、会分享我学习编程过程中的经理和心得，希望可以给来到这里的人带来帮助...</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider "></div>
+        <p class="my-text-thin my-text-spaced my-text-lined my-opacity-mini">Copyright &copy; 2020 skg-xsn Designed by skg-xsn</p>
+    </div>
+</footer>
+	<!--/*/<th:block th:replace="_fragments::script">/*/-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+	<script src="../static/lib/highlight/highlight.pack.js"></script>
+	<!--/*/</th:block>/*/-->
+	<script type="text/javascript">
+		$('.showbtn').click(function(event) {
+			$('.myhide').toggleClass('my-mobile-hide ');
+		});
+		$('#paybtn').popup({
+			popup : $('.paymoney.popup'),
+			on : "click",
+			position : "bottom center"
+		});
+	</script>
+</body>
+</html>
+
+

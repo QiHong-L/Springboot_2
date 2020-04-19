@@ -45,7 +45,7 @@ public class ShiroConfig {
         filterMap.put("/vip3/**", "authc");
         //登出
         filterMap.put("/logout/","logout");
-
+        //设置登录权限
         filterMap.put("/vip1/**", "perms[user:admin]");
         filterMap.put("/vip2/**", "perms[user:vip2]");
 
